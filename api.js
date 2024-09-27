@@ -73,7 +73,7 @@ async function refreshMail() {
   if (!user || !domain) return;
 
   try {
-    const response = await axios.get(`https://api.mailgun.net/v3/${domain}/messages`, {
+    const response = await axios.get(`https://api.mailgun.net/v4/${domain}/messages`, {
       auth: {
         username: 'api',
         password: mailgunApiKey
