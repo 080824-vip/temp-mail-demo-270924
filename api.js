@@ -49,6 +49,7 @@ function populateDomainSelect() {
     console.log('Domain select element:', domainSelect);
     console.log('Domain select element:', domainSelect);
     console.log('Domain select element:', domainSelect);
+    console.log('Domain select element:', domainSelect);
     console.log('Populating domain select with domains:', domains);
     domains.forEach(domain => {
         const option = document.createElement('option');
