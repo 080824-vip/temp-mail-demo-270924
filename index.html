@@ -55,6 +55,7 @@
       </div>
     </div>
     <div class="horizontalContainer">
+      <select id="domain-select"></select>
       <input id="addr" placeholder="email address" />
       <button onclick="refreshMail()">Load Mail</button>
       <button onclick="genEmail()">New Address</button>
@@ -74,6 +75,7 @@
     <script>
       window.onload = function () {
         document.getElementById("popupNotification").style.display = "block";
+        populateDomainSelect();
       };
 
       function closePopup() {

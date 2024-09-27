@@ -40,8 +40,19 @@ function getUserAndDomain() {
   return { user, domain };
 }
 
+function populateDomainSelect() {
+    const domainSelect = document.getElementById('domain-select');
+    domains.forEach(domain => {
+        const option = document.createElement('option');
+        option.value = domain;
+        option.text = domain;
+        domainSelect.appendChild(option);
+    });
+}
+
 function genEmail() {
-  const domain = domains[Math.floor(Math.random() * domains.length)];
+    const domainSelect = document.getElementById('domain-select');
+    const domain = domainSelect.value;
   const user = Math.random().toString(36).substring(2, 15);
   const email = `${user}@${domain}`;
   $("#addr").val(email);
