@@ -1,0 +1,4 @@
+example.com
+anotherdomain.com
+
+vps24h.me
