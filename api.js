@@ -42,8 +42,10 @@ function getUserAndDomain() {
 
 function populateDomainSelect() {
     console.log('Domains read from file:', domains);
+    console.log('Domains read from file:', domains);
     console.log('Populating domain select with domains:', domains);
     const domainSelect = document.getElementById('domain-select');
+    console.log('Domain select element:', domainSelect);
     console.log('Domain select element:', domainSelect);
     console.log('Populating domain select with domains:', domains);
     domains.forEach(domain => {
