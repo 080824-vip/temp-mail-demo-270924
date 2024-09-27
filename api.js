@@ -41,6 +41,7 @@ function getUserAndDomain() {
 }
 
 function populateDomainSelect() {
+    console.log('Populating domain select with domains:', domains);
     const domainSelect = document.getElementById('domain-select');
     console.log('Populating domain select with domains:', domains);
     domains.forEach(domain => {
